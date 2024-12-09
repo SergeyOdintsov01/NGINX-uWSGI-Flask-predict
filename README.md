@@ -1,11 +1,12 @@
-web                     
-├── app                     
-│   ├── models                  
-│   │    └──model.pkl           
-│   └── plot.py             
-├── Dockerfile              
-├── uwsgi.ini                   
-└── requirements.txt                    
+web
+├── app
+│   ├── models
+│   │   ├── model.pkl
+│   │   └── plot.py
+├── Dockerfile
+├── uwsgi.ini
+└── requirements.txt
+         
 
 Как запустить:
 1. Проверить наличие образа ```server_image```  (docker images).
