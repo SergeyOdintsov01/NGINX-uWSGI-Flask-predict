@@ -1,3 +1,4 @@
+```
 web                     
 ├── app                     
 │   ├── models                  
@@ -6,7 +7,7 @@ web
 ├── Dockerfile              
 ├── uwsgi.ini                   
 └── requirements.txt                    
-
+```
 Как запустить:
 1. Проверить наличие образа ```server_image```  (docker images).
 2. Если образа нет, создать : ```docker build -t server_image .```
