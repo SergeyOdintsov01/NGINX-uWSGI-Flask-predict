@@ -1,0 +1,17 @@
+#FROM python:latest
+FROM tiangolo/uwsgi-nginx-flask:latest
+
+WORKDIR /usr/src/app
+
+COPY ./app /usr/src/app/
+COPY requirements.txt /usr/src/app/
+COPY ./uwsgi.ini ./
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3-dev \
+    && apt-get clean
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "./server.py"]
