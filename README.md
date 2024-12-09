@@ -1,12 +1,11 @@
-web
-├── app
-│   ├── models
-│   │   ├── model.pkl
-│   │   └── plot.py
-├── Dockerfile
-├── uwsgi.ini
-└── requirements.txt
-         
+web                     
+├── app                     
+│   ├── models                  
+│   │    └──model.pkl           
+│   └── plot.py             
+├── Dockerfile              
+├── uwsgi.ini                   
+└── requirements.txt                    
 
 Как запустить:
 1. Проверить наличие образа ```server_image```  (docker images).
@@ -102,6 +101,6 @@ $ sudo nginx -t
 ```docker exec -it server_container bash```
 После её выполнения мы попадём в файловую систему, окажемся в рабочей директории нашего контейнера и сможем проанализировать его содержимое. Например, выполним команду ls:
 ```root@67af457ba3d1:/app# ls```                                           
-```__pycache__  main.py  prestart.sh  uwsgi.ini```              
+```__pycache__  main.py  prestart.sh  uwsgi.ini```          
 
 
